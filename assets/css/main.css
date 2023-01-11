@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: red;
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.menu {
+    background-color: #fff;
+    position: relative;
+}
+
+.menu-item {
+    width: 200px;
+    /* position: relative; */
+}
+
+.menu-item p {
+    padding-left: 8px;
+    padding-right: 8px;
+    height: 27px;
+    line-height: 27px;
+    text-decoration: none;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-item p .icon {
+    display: none;
+}
+
+.menu-item:hover > p,
+.menu-item:hover > p a {
+    color: chocolate;
+}
+
+.menu-item:hover > p .icon {
+    display: inline-block;
+    color: chocolate;
+}
+
+.menu-item-2:hover > p,
+.menu-item-2:hover > p a {
+    color: chocolate;
+}
+.sub-menu {
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 200px;
+    display: none;
+    height: 100%;
+    background-color: #fff;
+}
+
+.menu-item-2 {
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 200px;
+    display: none;
+    height: 100%;
+    background-color: #fff;
+}
+
+.menu-item:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu:hover .menu-item-2 {
+    display: block;
+}
